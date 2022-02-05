@@ -11,7 +11,7 @@ export default function TopNavigation() {
             <Stack.Screen
                 name="Hot"
                 component={TopScreen}
-                options={{ title: "reddit/r/programing" }}
+                options={{ title: "reddit/r/programing", headerTitleAlign: 'center' }}
             />
             <Stack.Screen name="Post" component={PostScreen} />
         </Stack.Navigator>

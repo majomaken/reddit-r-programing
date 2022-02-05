@@ -11,7 +11,7 @@ export default function ControversialNavigation() {
             <Stack.Screen
                 name="Hot"
                 component={ControversialScreen}
-                options={{ title: "reddit/r/programing" }}
+                options={{ title: "reddit/r/programing", headerTitleAlign: 'center' }}
             />
             <Stack.Screen name="Post" component={PostScreen} />
         </Stack.Navigator>

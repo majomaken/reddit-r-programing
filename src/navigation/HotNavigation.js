@@ -11,9 +11,12 @@ export default function HotNavigation() {
             <Stack.Screen
                 name="Hot"
                 component={HotScreen}
-                options={{ title: "reddit/r/programing" }}
+                options={{ title: "reddit/r/programing", headerTitleAlign: 'center' }}
             />
-            <Stack.Screen name="Post" component={PostScreen} />
+            <Stack.Screen name="Post" component={PostScreen} options={{
+                title: "reddit/r/programing",
+                headerTitleAlign: 'center'
+            }} />
         </Stack.Navigator>
     );
 }

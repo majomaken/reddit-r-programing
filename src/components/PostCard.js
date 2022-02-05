@@ -7,7 +7,7 @@ export default function PostCard(props) {
     const navigation = useNavigation();
 
     const goToPost = () => {
-        navigation.navigate("Post", { url: post.url });
+        navigation.navigate("Post", { url: post.url, postTitle: post.title });
     }
 
     return (
