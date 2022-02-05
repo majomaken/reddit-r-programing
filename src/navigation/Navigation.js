@@ -12,22 +12,20 @@ export default function Navigation() {
     return (
         <Tab.Navigator>
             <Tab.Screen
-                name="Hot"
-                component={HotNavigation}
-                options={{
-                    tabBarLabel: "Hot",
-                    tabBarIcon: ({ color, size }) => (
-                        <Icon name='hotjar' color={color} size={size} />
-                    )
-                }}
-            />
-            <Tab.Screen
                 name="New"
                 component={NewNavigation}
                 options={{
                     tabBarLabel: "New",
                     tabBarIcon: ({ color, size }) => (
                         <Icon name='newspaper' color={color} size={size} />
+                    )
+                }}
+            />
+            <Tab.Screen name="Top" component={TopNavigation}
+                options={{
+                    tabBarLabel: "Top",
+                    tabBarIcon: ({ color, size }) => (
+                        <Icon name='sort-amount-up' color={color} size={size} />
                     )
                 }}
             />
@@ -38,13 +36,14 @@ export default function Navigation() {
                         <Icon name='comment-slash' color={color} size={size} />
                     )
                 }}
-
             />
-            <Tab.Screen name="Top" component={TopNavigation}
+            <Tab.Screen
+                name="Hot"
+                component={HotNavigation}
                 options={{
-                    tabBarLabel: "Top",
+                    tabBarLabel: "Hot",
                     tabBarIcon: ({ color, size }) => (
-                        <Icon name='sort-amount-up' color={color} size={size} />
+                        <Icon name='hotjar' color={color} size={size} />
                     )
                 }}
             />
