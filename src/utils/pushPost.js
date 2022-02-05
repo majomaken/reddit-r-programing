@@ -37,6 +37,7 @@ export const pushPost = async (postsArray, response) => {
             title: post.data.title,
             score: post.data.score,
             date_created: aGoTime(post.data.created),
+            date_created_mili: post.data.created,
             num_comments: post.data.num_comments,
             author_name: post.data.author,
             post_image: post.data.thumbnail,

@@ -17,7 +17,7 @@ export default function New() {
             const response = await getPostApi();
             const postsArray = [];
             pushPost(postsArray, response);
-            postsArray.sort((a, b) => (a.date_created > b.date_created) ? 1 : -1)
+            postsArray.sort((a, b) => (a.date_created_mili < b.date_created_mili) ? 1 : -1)
             setPosts(...posts, postsArray);
         } catch (error) {
             console.log(error)
