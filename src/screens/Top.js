@@ -18,7 +18,7 @@ export default function Top() {
             const postsArray = [];
             pushPost(postsArray, response);
             postsArray.sort((a, b) => (a.score < b.score) ? 1 : -1)
-            setPosts(...posts, ...postsArray);
+            setPosts(...posts, postsArray);
         } catch (error) {
             console.log(error)
         }
